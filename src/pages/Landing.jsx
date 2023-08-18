@@ -35,8 +35,7 @@
 import Wrapper from '../assets/wrappers/LandingPage';
 import main from '../assets/images/main.svg';
 import  {Link}  from 'react-router-dom';
-
-
+import Logo from '../components/Logo';
 
 const Landing = () => {
 
@@ -44,7 +43,7 @@ const Landing = () => {
     <Wrapper>
     <nav>
        <Logo/>
-    {/* <img src="../src/assets/images/Jobify.jpeg" alt='avt'/> */}
+    {/* <img src="../" alt='avt'/> */}
     </nav>
      
       <div className='container page'>
@@ -59,9 +58,9 @@ const Landing = () => {
             narwhal.
           </p>
           <div>
-          <button type="button" class="btn btn-success">Register</button> 
+          <button type="button" className="btn btn-primary">Register</button> 
             
-          <button type="button" class="btn btn-success">Login / Demo User</button>
+          <button type="button" className="btn btn-success">Login / Demo User</button>
           </div>
         </div>
         <img src={main} alt='job hunt' className='img main-img' />

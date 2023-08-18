@@ -55,6 +55,18 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+button.btn.btn-primary{
+  background-color: cornflowerblue;
+  color: white;
+  margin-right: 15px;
+}
+
+button.btn.btn-success{
+  background-color: darkcyan;
+  color: white;
+  margin-right: 15px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
