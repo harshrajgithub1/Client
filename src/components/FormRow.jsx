@@ -18,4 +18,4 @@ const FormRow = ({type,name,labelText,defaultValue}) => {
   )
 }
 
-export default FormRow
+export default FormRow;
