@@ -67,6 +67,10 @@ button.btn.btn-success{
   margin-right: 15px;
 }
 
+.pull-right{
+  float: right;
+  }
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

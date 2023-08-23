@@ -7,7 +7,7 @@ const NavLinks = ({isBigSidebar}) => {
   return (
     <div className='nav-links'>
        {links.map((link)=>{
-         const{text,path,icon}=links;
+         const{text,path,icon}=link;
          return(
             <NavLink to={path}
                     key={text}
@@ -23,6 +23,6 @@ const NavLinks = ({isBigSidebar}) => {
       
     </div>
   )
-}
+};
 
-export default NavLinks
+export default NavLinks;
