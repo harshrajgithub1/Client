@@ -41,7 +41,7 @@
 //          <BigSidebar/>
 //           <div>
 //             <Navbar />
-//               <div className='dashboard-page'>
+//                 <div className='dashboard-page'>
 //                 <Outlet/>
 //               </div>
 //           </div>
@@ -61,14 +61,18 @@ import React, { createContext, useContext, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import Wrapper from '../assets/wrappers/Dashboard';
 import { BigSidebar, Navbar, SmallSidebar } from '../components';
+import { checkDefaultTheme } from '../App';
+
 
 // Create the context
 const DashboardContext = createContext();
 
-const DashboardLayout = () => {
+
+const DashboardLayout = ({isDarkThemeEnabled}) => {
   const user = { name: 'john' };
   const [showSidebar, setShowSidebar] = useState(false);
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(isDarkThemeEnabled);
+  
 
   const toggleDarkTheme = () => {
     const newDarkTheme = !isDarkTheme;
